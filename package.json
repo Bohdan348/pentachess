@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "build:vercel": "node scripts/build-vercel.mjs",
     "start": "node build/server.mjs",
     "dev": "npm run build && npm start",
     "test": "node --import tsx tests/engine.test.ts && node --import tsx tests/rooms.test.ts",
